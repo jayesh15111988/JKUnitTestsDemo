@@ -39,14 +39,6 @@
     
 }
 
-+ (void)load {
-    
-}
-
-- (void)loadView {
-    
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _viewModel.searchedBrides.count;
 }
