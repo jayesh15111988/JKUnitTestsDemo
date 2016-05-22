@@ -53,4 +53,16 @@
     XCTAssertEqual([self.mockFilterViewController actiAnimating], YES);
 }
 
+- (void)testDisplayErrorMessage {
+    id nameField = [OCMockObject mockForClass:[UITextField class]];
+    [[[nameField stub] andReturn:@""] text];
+    id passwordField = [OCMockObject mockForClass:[UITextField class]];
+    [[[passwordField stub] andReturn:@""] text];
+    OCMStub([self.mockFilterViewController nameField]).andReturn(nameField);
+    OCMStub([self.mockFilterViewController passwordField]).andReturn(passwordField);
+    [[self.mockFilterViewController expect] showErrorMessage];
+    [self.mockFilterViewController validateFields];
+    [self.mockFilterViewController verify];
+}
+
 @end

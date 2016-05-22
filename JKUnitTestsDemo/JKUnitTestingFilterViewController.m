@@ -38,7 +38,15 @@
 }
 
 - (BOOL)validateFields {
-    return (self.nameField.text.length > 5 && self.passwordField.text.length > 5);
+    BOOL valid = (self.nameField.text.length > 5 && self.passwordField.text.length > 5);
+    if (!valid) {
+        [self showErrorMessage];
+    }
+    return valid;
+}
+
+- (void)showErrorMessage {
+    
 }
 
 @end

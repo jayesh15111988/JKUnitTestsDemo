@@ -17,5 +17,6 @@
 
 - (void)toggleSpinner;
 - (BOOL)validateFields;
+- (void)showErrorMessage;
 
 @end
