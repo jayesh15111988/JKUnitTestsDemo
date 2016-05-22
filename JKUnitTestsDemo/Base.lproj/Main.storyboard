@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wNz-ZT-10o">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="C7b-94-Ivt">
+            <objects>
+                <navigationController id="wNz-ZT-10o" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cZ-Ar-RI4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j9q-Wd-dne"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXG-Sk-6wO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-131" y="337"/>
+        </scene>
+        <!--Search Bride View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="JKSearchBrideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="W7e-m7-ewP">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="plX-jE-7bK"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iXl-Ob-4Hz">
+                                <rect key="frame" x="0.0" y="108" width="320" height="29"/>
+                                <segments>
+                                    <segment title="Name"/>
+                                    <segment title="Caste"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UHi-Wq-oPS">
+                                <rect key="frame" x="0.0" y="137" width="320" height="343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="7eW-XZ-BJH">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7eW-XZ-BJH" id="HkJ-ZA-rqW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1Y4-4x-1ED"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vTP-Kc-wht"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UHi-Wq-oPS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Yt-c7-DrK"/>
+                            <constraint firstAttribute="trailing" secondItem="UHi-Wq-oPS" secondAttribute="trailing" id="0t8-lD-ZA0"/>
+                            <constraint firstItem="W7e-m7-ewP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2rE-ic-2rh"/>
+                            <constraint firstAttribute="trailing" secondItem="iXl-Ob-4Hz" secondAttribute="trailing" id="EMz-Lg-ncF"/>
+                            <constraint firstAttribute="trailing" secondItem="W7e-m7-ewP" secondAttribute="trailing" id="Elx-Y3-BR2"/>
+                            <constraint firstItem="iXl-Ob-4Hz" firstAttribute="top" secondItem="W7e-m7-ewP" secondAttribute="bottom" id="PLu-tb-vxr"/>
+                            <constraint firstItem="W7e-m7-ewP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YY2-4w-2o4"/>
+                            <constraint firstItem="iXl-Ob-4Hz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ygu-VH-VIk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UHi-Wq-oPS" secondAttribute="bottom" id="a6q-NZ-3H8"/>
+                            <constraint firstItem="UHi-Wq-oPS" firstAttribute="top" secondItem="iXl-Ob-4Hz" secondAttribute="bottom" constant="1" id="xot-Wj-gof"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wqU-px-dOM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="W7e-m7-ewP" id="THS-3S-kpe"/>
+                        <outlet property="segmentationView" destination="iXl-Ob-4Hz" id="Pdr-se-OCR"/>
+                        <outlet property="tableView" destination="UHi-Wq-oPS" id="AJn-fC-rRz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="337"/>
+        </scene>
+    </scenes>
+</document>

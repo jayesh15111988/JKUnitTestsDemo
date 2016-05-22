@@ -1,0 +1,50 @@
+{
+    "success": true,
+    "brides": [
+               {
+               "first_name": "Berta",
+               "last_name": "Johnson",
+               "city": "Boston",
+               "cast": "Wanjari",
+               "married": true,
+               "education": "masters",
+               "income": 60000
+               },
+               {
+               "first_name": "Leena",
+               "last_name": "Crident",
+               "city": "Pune",
+               "cast": "CKP",
+               "married": false,
+               "education": "bachelors",
+               "income": 30000
+               },
+               {
+               "first_name": "Jacqueline",
+               "last_name": "Sharp",
+               "city": "Virar",
+               "cast": "Pachkalshi",
+               "married": true,
+               "education": "bachelors",
+               "income": 10000
+               },
+               {
+               "first_name": "Reggie",
+               "last_name": "Love",
+               "city": "Vasai",
+               "cast": "Pachkalshi",
+               "married": true,
+               "education": "masters",
+               "income": 5000
+               },
+               {
+               "first_name": "Jessica",
+               "last_name": "Roberts",
+               "city": "Vasai",
+               "cast": "Pachkalshi",
+               "married": false,
+               "education": "bachelors",
+               "income": 40000
+               }
+               ]
+}
