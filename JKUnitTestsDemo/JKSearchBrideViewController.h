@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class JKBridesSearchViewModel;
 
-@interface JKSearchBrideViewController : UIViewController
+@interface JKSearchBrideViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) JKBridesSearchViewModel* viewModel;
 

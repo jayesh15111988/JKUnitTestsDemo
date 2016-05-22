@@ -20,6 +20,7 @@
 		38E939F71CF12DB900002665 /* JKBride.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E939F61CF12DB900002665 /* JKBride.m */; };
 		38E939FA1CF1307200002665 /* JKBridesSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E939F91CF1307200002665 /* JKBridesSearchViewModel.m */; };
 		38E939FE1CF1353000002665 /* UISearchBar+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E939FD1CF1353000002665 /* UISearchBar+RAC.m */; };
+		38E93A011CF1464200002665 /* JKUnitTestsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A001CF1464200002665 /* JKUnitTestsViewControllerTests.m */; };
 		CF294F234B317F2513B0AE33 /* libPods-JKUnitTestsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6708B9A49B8B0A9E74BB11D9 /* libPods-JKUnitTestsDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		38E939F91CF1307200002665 /* JKBridesSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBridesSearchViewModel.m; sourceTree = "<group>"; };
 		38E939FC1CF1353000002665 /* UISearchBar+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+RAC.h"; sourceTree = "<group>"; };
 		38E939FD1CF1353000002665 /* UISearchBar+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+RAC.m"; sourceTree = "<group>"; };
+		38E93A001CF1464200002665 /* JKUnitTestsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUnitTestsViewControllerTests.m; sourceTree = "<group>"; };
 		6708B9A49B8B0A9E74BB11D9 /* libPods-JKUnitTestsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKUnitTestsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1930EABF83D621C25370B0A /* Pods-JKUnitTestsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemoTests/Pods-JKUnitTestsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE226EA9170DE68471F6A2EA /* Pods-JKUnitTestsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemo/Pods-JKUnitTestsDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		386C24971CF109EA00582089 /* JKUnitTestsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				38E93A021CF14BA500002665 /* Sample Code For testing */,
 				38E939FB1CF1351400002665 /* RAC Extensions */,
 				38E939F11CF12D6C00002665 /* APIs */,
 				38E939EE1CF12BDC00002665 /* View Controllers */,
@@ -136,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				386C24B21CF109EA00582089 /* JKUnitTestsDemoTests.m */,
+				38E93A001CF1464200002665 /* JKUnitTestsViewControllerTests.m */,
 				386C24B41CF109EA00582089 /* Info.plist */,
 			);
 			path = JKUnitTestsDemoTests;
@@ -192,6 +196,13 @@
 				38E939FD1CF1353000002665 /* UISearchBar+RAC.m */,
 			);
 			name = "RAC Extensions";
+			sourceTree = "<group>";
+		};
+		38E93A021CF14BA500002665 /* Sample Code For testing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Sample Code For testing";
 			sourceTree = "<group>";
 		};
 		7F7579E40C58FA50D1FFFCF8 /* Pods */ = {
@@ -428,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E93A011CF1464200002665 /* JKUnitTestsViewControllerTests.m in Sources */,
 				386C24B31CF109EA00582089 /* JKUnitTestsDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
