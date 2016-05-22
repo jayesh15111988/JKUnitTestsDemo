@@ -8,6 +8,7 @@
 
 #import <Specta/Specta.h>
 #import <OCMock/OCMock.h>
+#import <Expecta/Expecta.h>
 #import <XCTest/XCTest.h>
 #import "JKUnitTestingFilterViewController.h"
 
