@@ -6,6 +6,7 @@ xcodeproj 'JKUnitTestsDemo'
 target :JKUnitTestsDemo do
     pod 'ReactiveCocoa', '~> 2.0'
     pod 'BlocksKit', '~> 2.2'
+    pod 'Expecta', '~> 1.0'
 end
 
 target :JKUnitTestsDemoTests do

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381966B51CF22B4700670A2C /* JKUnitTestingFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381966B41CF22B4700670A2C /* JKUnitTestingFilterViewController.m */; };
+		381966B71CF22C5200670A2C /* JKUnitTestsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 381966B61CF22C5200670A2C /* JKUnitTestsViewControllerTests.m */; };
 		386C249A1CF109EA00582089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C24991CF109EA00582089 /* main.m */; };
 		386C249D1CF109EA00582089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C249C1CF109EA00582089 /* AppDelegate.m */; };
 		386C24A01CF109EA00582089 /* JKSearchBrideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C249F1CF109EA00582089 /* JKSearchBrideViewController.m */; };
@@ -24,6 +26,8 @@
 		38E93A111CF2203100002665 /* JKSpecificCasteBridesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A101CF2203100002665 /* JKSpecificCasteBridesProvider.m */; };
 		38E93A141CF221A600002665 /* JKUnitTestingNetworkSutbs.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A131CF221A600002665 /* JKUnitTestingNetworkSutbs.m */; };
 		38E93A151CF2262000002665 /* JKUnitTestsViewOperationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A001CF1464200002665 /* JKUnitTestsViewOperationsTests.m */; };
+		832F55F47C496E2BA65109D8 /* libPods-JKUnitTestsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B61FC8D69DAFC6135779DFB /* libPods-JKUnitTestsDemo.a */; };
+		C108139A0E6E12FA181A0395 /* libPods-JKUnitTestsDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA06CD13E67C85B963B98B2 /* libPods-JKUnitTestsDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		0809E02BB74195B998C9F505 /* Pods-JKUnitTestsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemo/Pods-JKUnitTestsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0B61FC8D69DAFC6135779DFB /* libPods-JKUnitTestsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKUnitTestsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		381966B31CF22B4700670A2C /* JKUnitTestingFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKUnitTestingFilterViewController.h; sourceTree = "<group>"; };
+		381966B41CF22B4700670A2C /* JKUnitTestingFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUnitTestingFilterViewController.m; sourceTree = "<group>"; };
+		381966B61CF22C5200670A2C /* JKUnitTestsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUnitTestsViewControllerTests.m; sourceTree = "<group>"; };
 		386C24951CF109EA00582089 /* JKUnitTestsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKUnitTestsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386C24991CF109EA00582089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		386C249B1CF109EA00582089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +77,7 @@
 		38E93A101CF2203100002665 /* JKSpecificCasteBridesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSpecificCasteBridesProvider.m; sourceTree = "<group>"; };
 		38E93A131CF221A600002665 /* JKUnitTestingNetworkSutbs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUnitTestingNetworkSutbs.m; sourceTree = "<group>"; };
 		A1930EABF83D621C25370B0A /* Pods-JKUnitTestsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemoTests/Pods-JKUnitTestsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA06CD13E67C85B963B98B2 /* libPods-JKUnitTestsDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKUnitTestsDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE226EA9170DE68471F6A2EA /* Pods-JKUnitTestsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemo/Pods-JKUnitTestsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA2EC5A7FF6995FE23E75643 /* Pods-JKUnitTestsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemoTests/Pods-JKUnitTestsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832F55F47C496E2BA65109D8 /* libPods-JKUnitTestsDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C108139A0E6E12FA181A0395 /* libPods-JKUnitTestsDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +158,7 @@
 				38E93A001CF1464200002665 /* JKUnitTestsViewOperationsTests.m */,
 				38E93A131CF221A600002665 /* JKUnitTestingNetworkSutbs.m */,
 				386C24B41CF109EA00582089 /* Info.plist */,
+				381966B61CF22C5200670A2C /* JKUnitTestsViewControllerTests.m */,
 			);
 			path = JKUnitTestsDemoTests;
 			sourceTree = "<group>";
@@ -182,6 +194,8 @@
 			children = (
 				386C249E1CF109EA00582089 /* JKSearchBrideViewController.h */,
 				386C249F1CF109EA00582089 /* JKSearchBrideViewController.m */,
+				381966B31CF22B4700670A2C /* JKUnitTestingFilterViewController.h */,
+				381966B41CF22B4700670A2C /* JKUnitTestingFilterViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -231,6 +245,8 @@
 		B4AF00B49DAB92B0EF4F9512 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B61FC8D69DAFC6135779DFB /* libPods-JKUnitTestsDemo.a */,
+				CDA06CD13E67C85B963B98B2 /* libPods-JKUnitTestsDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -440,6 +456,7 @@
 				386C24A01CF109EA00582089 /* JKSearchBrideViewController.m in Sources */,
 				386C249D1CF109EA00582089 /* AppDelegate.m in Sources */,
 				38E939F41CF12D8D00002665 /* JKBridesProvider.m in Sources */,
+				381966B51CF22B4700670A2C /* JKUnitTestingFilterViewController.m in Sources */,
 				386C249A1CF109EA00582089 /* main.m in Sources */,
 				38E93A091CF152A000002665 /* JKUnitTestsAlternativeOperation.m in Sources */,
 				38E93A111CF2203100002665 /* JKSpecificCasteBridesProvider.m in Sources */,
@@ -454,6 +471,7 @@
 			files = (
 				38E93A151CF2262000002665 /* JKUnitTestsViewOperationsTests.m in Sources */,
 				38E93A141CF221A600002665 /* JKUnitTestingNetworkSutbs.m in Sources */,
+				381966B71CF22C5200670A2C /* JKUnitTestsViewControllerTests.m in Sources */,
 				386C24B31CF109EA00582089 /* JKUnitTestsDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

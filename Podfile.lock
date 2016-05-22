@@ -14,6 +14,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - Expecta (1.0.5)
   - OCMock (3.3)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -26,16 +27,18 @@ PODS:
 
 DEPENDENCIES:
   - BlocksKit (~> 2.2)
+  - Expecta (~> 1.0)
   - OCMock (~> 3.3)
   - ReactiveCocoa (~> 2.0)
   - Specta (~> 1.0)
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-PODFILE CHECKSUM: 0ccb86f191f058d821f55061a36040e1c473980a
+PODFILE CHECKSUM: 9f1967a851f5cfda96b41b24a2a0b221836ab5f0
 
 COCOAPODS: 1.0.0

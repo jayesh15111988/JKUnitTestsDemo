@@ -7,6 +7,8 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <BlocksKit+UIKit.h>
+#import "JKUnitTestingFilterViewController.h"
 #import "JKBridesSearchViewModel.h"
 #import "UISearchBar+RAC.h"
 #import "JKBride.h"
@@ -25,6 +27,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.viewModel = [[JKBridesSearchViewModel alloc] init];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"Filter" style:UIBarButtonItemStylePlain handler:^(id sender) {
+        JKUnitTestingFilterViewController* filterVC = [[JKUnitTestingFilterViewController alloc] init];
+        UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:filterVC];
+        [self presentViewController:nav animated:YES completion:NULL];
+    }];
     [[[_searchBar rac_textSignal] ignore:nil] subscribeNext:^(id x) {
         _viewModel.searchString = x;
     }];

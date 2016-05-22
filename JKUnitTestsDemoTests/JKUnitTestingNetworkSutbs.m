@@ -14,13 +14,13 @@
 #import <Specta.h>
 
 
-SpecBegin(OperationTests)
+SpecBegin(NetworkStubTests)
 
 __block id networkRequestMock;
 __block NSArray<JKBride*>* brides;
 
 beforeAll(^{
-    networkRequestMock = OCMClassMock([JKSpecificCasteBridesProvider class]);
+    networkRequestMock = OCMClassMock([JKBridesProvider class]);
     
     NSDictionary* bridesDict = @{
                                  @"success": @1,

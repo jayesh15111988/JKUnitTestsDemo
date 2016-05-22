@@ -24,7 +24,6 @@ __block JKSearchBrideViewController* vc;
 __block UINavigationController* navController;
 
 beforeAll(^{
-    
     NSDictionary* bridesDict = @{
         @"success": @1,
         @"brides": @[
