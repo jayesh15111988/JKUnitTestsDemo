@@ -120,13 +120,14 @@ describe(@"Verifying the selection of row", ^{
 
 });
 
-describe(@"Verifying is view is displayed on the screen", ^{
+describe(@"Verifying is table View is displayed on the screen and additional tests for testing UITableView", ^{
     
     before(^{
         navController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
         vc = (JKSearchBrideViewController*)navController.topViewController;
         vc.viewModel = viewModel;
         [UIApplication sharedApplication].keyWindow.rootViewController = navController;
+        [vc loadView];
     });
     
     it(@"Verifying the valid views", ^{
@@ -140,10 +141,20 @@ describe(@"Verifying is view is displayed on the screen", ^{
     
     it(@"Verifying the cell model", ^{
         UITableViewCell* firstCell = [vc tableView:[UITableView new] cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-        XCTAssert([firstCell.textLabel.text isEqualToString:@"Berta Johnson"]);
+        XCTAssert([firstCell.textLabel.text isEqualToString:@"Berta Johnson Wanjari"]);
         
         UITableViewCell* secondCell = [vc tableView:[UITableView new] cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
-        XCTAssert([secondCell.textLabel.text isEqualToString:@"Leena Crident"]);
+        XCTAssert([secondCell.textLabel.text isEqualToString:@"Leena Crident CKP"]);
+    });
+    
+    it(@"Verifying if vc conforms to tableView protocols", ^{
+        XCTAssertTrue([vc conformsToProtocol:@protocol(UITableViewDelegate)]);
+        XCTAssertTrue([vc conformsToProtocol:@protocol(UITableViewDataSource)]);
+    });
+    
+    it(@"Verifying the table view cell reuse identifier", ^{
+        UITableViewCell* cell = [vc tableView:[UITableView new] cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+        XCTAssertTrue([cell.reuseIdentifier isEqualToString:@"cell"]);
     });
     
     it(@"Verifying the cell selection makes appropriate model selected on search view model", ^{

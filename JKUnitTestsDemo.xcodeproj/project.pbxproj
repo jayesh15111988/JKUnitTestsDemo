@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06CD17F97BCCCE3F657F4020 /* libPods-JKUnitTestsDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B37D8722EAB602F81542F61 /* libPods-JKUnitTestsDemoTests.a */; };
 		386C249A1CF109EA00582089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C24991CF109EA00582089 /* main.m */; };
 		386C249D1CF109EA00582089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C249C1CF109EA00582089 /* AppDelegate.m */; };
 		386C24A01CF109EA00582089 /* JKSearchBrideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C249F1CF109EA00582089 /* JKSearchBrideViewController.m */; };
@@ -20,10 +19,11 @@
 		38E939F71CF12DB900002665 /* JKBride.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E939F61CF12DB900002665 /* JKBride.m */; };
 		38E939FA1CF1307200002665 /* JKBridesSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E939F91CF1307200002665 /* JKBridesSearchViewModel.m */; };
 		38E939FE1CF1353000002665 /* UISearchBar+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E939FD1CF1353000002665 /* UISearchBar+RAC.m */; };
-		38E93A011CF1464200002665 /* JKUnitTestsViewOperationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A001CF1464200002665 /* JKUnitTestsViewOperationsTests.m */; };
 		38E93A051CF14CC600002665 /* JKUnitTestsDemoOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A041CF14CC600002665 /* JKUnitTestsDemoOperations.m */; };
 		38E93A091CF152A000002665 /* JKUnitTestsAlternativeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A081CF152A000002665 /* JKUnitTestsAlternativeOperation.m */; };
-		CF294F234B317F2513B0AE33 /* libPods-JKUnitTestsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6708B9A49B8B0A9E74BB11D9 /* libPods-JKUnitTestsDemo.a */; };
+		38E93A111CF2203100002665 /* JKSpecificCasteBridesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A101CF2203100002665 /* JKSpecificCasteBridesProvider.m */; };
+		38E93A141CF221A600002665 /* JKUnitTestingNetworkSutbs.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A131CF221A600002665 /* JKUnitTestingNetworkSutbs.m */; };
+		38E93A151CF2262000002665 /* JKUnitTestsViewOperationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E93A001CF1464200002665 /* JKUnitTestsViewOperationsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		0809E02BB74195B998C9F505 /* Pods-JKUnitTestsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemo/Pods-JKUnitTestsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		2B37D8722EAB602F81542F61 /* libPods-JKUnitTestsDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKUnitTestsDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		386C24951CF109EA00582089 /* JKUnitTestsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKUnitTestsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386C24991CF109EA00582089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		386C249B1CF109EA00582089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,7 +65,9 @@
 		38E93A041CF14CC600002665 /* JKUnitTestsDemoOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUnitTestsDemoOperations.m; sourceTree = "<group>"; };
 		38E93A071CF152A000002665 /* JKUnitTestsAlternativeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKUnitTestsAlternativeOperation.h; sourceTree = "<group>"; };
 		38E93A081CF152A000002665 /* JKUnitTestsAlternativeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUnitTestsAlternativeOperation.m; sourceTree = "<group>"; };
-		6708B9A49B8B0A9E74BB11D9 /* libPods-JKUnitTestsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKUnitTestsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E93A0F1CF2203100002665 /* JKSpecificCasteBridesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSpecificCasteBridesProvider.h; sourceTree = "<group>"; };
+		38E93A101CF2203100002665 /* JKSpecificCasteBridesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSpecificCasteBridesProvider.m; sourceTree = "<group>"; };
+		38E93A131CF221A600002665 /* JKUnitTestingNetworkSutbs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUnitTestingNetworkSutbs.m; sourceTree = "<group>"; };
 		A1930EABF83D621C25370B0A /* Pods-JKUnitTestsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemoTests/Pods-JKUnitTestsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE226EA9170DE68471F6A2EA /* Pods-JKUnitTestsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemo/Pods-JKUnitTestsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA2EC5A7FF6995FE23E75643 /* Pods-JKUnitTestsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUnitTestsDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUnitTestsDemoTests/Pods-JKUnitTestsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF294F234B317F2513B0AE33 /* libPods-JKUnitTestsDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06CD17F97BCCCE3F657F4020 /* libPods-JKUnitTestsDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +145,7 @@
 			children = (
 				386C24B21CF109EA00582089 /* JKUnitTestsDemoTests.m */,
 				38E93A001CF1464200002665 /* JKUnitTestsViewOperationsTests.m */,
+				38E93A131CF221A600002665 /* JKUnitTestingNetworkSutbs.m */,
 				386C24B41CF109EA00582089 /* Info.plist */,
 			);
 			path = JKUnitTestsDemoTests;
@@ -191,6 +191,8 @@
 			children = (
 				38E939F21CF12D8D00002665 /* JKBridesProvider.h */,
 				38E939F31CF12D8D00002665 /* JKBridesProvider.m */,
+				38E93A0F1CF2203100002665 /* JKSpecificCasteBridesProvider.h */,
+				38E93A101CF2203100002665 /* JKSpecificCasteBridesProvider.m */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -229,8 +231,6 @@
 		B4AF00B49DAB92B0EF4F9512 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6708B9A49B8B0A9E74BB11D9 /* libPods-JKUnitTestsDemo.a */,
-				2B37D8722EAB602F81542F61 /* libPods-JKUnitTestsDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -442,6 +442,7 @@
 				38E939F41CF12D8D00002665 /* JKBridesProvider.m in Sources */,
 				386C249A1CF109EA00582089 /* main.m in Sources */,
 				38E93A091CF152A000002665 /* JKUnitTestsAlternativeOperation.m in Sources */,
+				38E93A111CF2203100002665 /* JKSpecificCasteBridesProvider.m in Sources */,
 				38E939F71CF12DB900002665 /* JKBride.m in Sources */,
 				38E93A051CF14CC600002665 /* JKUnitTestsDemoOperations.m in Sources */,
 			);
@@ -451,7 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E93A011CF1464200002665 /* JKUnitTestsViewOperationsTests.m in Sources */,
+				38E93A151CF2262000002665 /* JKUnitTestsViewOperationsTests.m in Sources */,
+				38E93A141CF221A600002665 /* JKUnitTestingNetworkSutbs.m in Sources */,
 				386C24B31CF109EA00582089 /* JKUnitTestsDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +579,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKUnitTestsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKUnitTestsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -589,6 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKUnitTestsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKUnitTestsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

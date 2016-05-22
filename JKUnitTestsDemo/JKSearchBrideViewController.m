@@ -44,7 +44,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     JKBride* bride = _viewModel.searchedBrides[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", bride.name, bride.cast];
     return cell;
