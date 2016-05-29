@@ -35,6 +35,7 @@
     OCMStub([self.mockFilterViewController nameField]).andReturn(nameField);
     OCMStub([self.mockFilterViewController passwordField]).andReturn(passwordField);
     XCTAssertEqual([self.mockFilterViewController validateFields], YES);
+    XCTAssertEqual([self.mockFilterViewController invalidInputFlag], NO);
 }
 
 - (void)testInvalidValues {
@@ -45,6 +46,7 @@
     OCMStub([self.mockFilterViewController nameField]).andReturn(nameField);
     OCMStub([self.mockFilterViewController passwordField]).andReturn(passwordField);
     XCTAssertEqual([self.mockFilterViewController validateFields], NO);
+    XCTAssertEqual([self.mockFilterViewController invalidInputFlag], YES);
 }
 
 - (void)testSpinnerLoad {

@@ -38,6 +38,7 @@
 }
 
 - (BOOL)validateFields {
+    self.invalidInputFlag = NO;
     BOOL valid = (self.nameField.text.length > 5 && self.passwordField.text.length > 5);
     if (!valid) {
         [self showErrorMessage];
@@ -46,7 +47,7 @@
 }
 
 - (void)showErrorMessage {
-    
+    self.invalidInputFlag = YES;
 }
 
 @end

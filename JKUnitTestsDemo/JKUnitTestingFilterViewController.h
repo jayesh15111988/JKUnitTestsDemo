@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIActivityIndicatorView* activityIndicatorView;
 @property (nonatomic, strong) UITextField* nameField;
 @property (nonatomic, strong) UITextField* passwordField;
+@property (nonatomic, assign) BOOL invalidInputFlag;
 @property (nonatomic, assign) BOOL actiAnimating;
 
 - (void)toggleSpinner;
