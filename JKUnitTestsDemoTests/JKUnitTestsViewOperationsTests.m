@@ -15,7 +15,6 @@ SpecBegin(OperationTests)
 
 __block id operation;
 __block JKUnitTestsAlternativeOperation* alternate;
-__block NSInteger totalPercentage;
 
 describe(@"Verifying the demo operations class functionality", ^{
     beforeAll(^{

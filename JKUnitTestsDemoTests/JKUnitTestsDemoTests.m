@@ -68,7 +68,7 @@ beforeAll(^{
 
 describe(@"Verifying the model creation", ^{
     
-    it(@"Moel Creation", ^{
+    it(@"Model Creation", ^{
         JKBride* firstBride = [brides firstObject];
         JKBride* lastBride = [brides lastObject];
         
@@ -144,6 +144,7 @@ describe(@"Verifying is table View is displayed on the screen and additional tes
         
         UITableViewCell* secondCell = [vc tableView:[UITableView new] cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
         XCTAssert([secondCell.textLabel.text isEqualToString:@"Leena Crident CKP"]);
+        
     });
     
     it(@"Verifying if vc conforms to tableView protocols", ^{
